@@ -1,0 +1,36 @@
+---
+title: Membership
+layout: base.njk
+---
+<h1>Membership</h1>
+
+<section>
+  <h2>Visit</h2>
+  <p>It is 100% free to visit as a guest and there will be no pressure to speak
+  during the first meeting. Simply come along and enjoy the speeches! We meet
+  on the {{ club.meeting.frequency }} at {{ club.meeting.time }} in the
+  {{ club.meeting.venue }} ({{ club.meeting.address }}).</p>
+</section>
+
+<section>
+  <h2>Sign up</h2>
+  <p>If you like what you see and want to get involved, simply speak to one of
+  the Club Officers during the meeting. They will be able to give you an
+  application form and provide payment information.</p>
+  <table class="pricing-table">
+    <thead><tr><th>Term</th><th>Price</th></tr></thead>
+    <tbody>
+      {% for tier in club.pricing %}
+      <tr><td>{{ tier.term }}</td><td>{{ tier.price }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Speak!</h2>
+  <p>Now it's time to practice speaking! New members are usually assigned minor
+  meeting roles to help you gradually build up your confidence. Once you're
+  ready, your first speech will be your Ice Breaker &mdash; an opportunity to
+  introduce yourself and become more comfortable speaking in front of an audience.</p>
+</section>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} - {{ club.name }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">{{ club.name }}</a>
+      <nav class="nav">
+        <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+        <a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>About</a>
+        <a href="/membership/" {% if page.url == "/membership/" %}class="active"{% endif %}>Membership</a>
+        <a href="/members/" {% if page.url == "/members/" %}class="active"{% endif %}>Members</a>
+        <a href="/resources/" {% if page.url == "/resources/" %}class="active"{% endif %}>Resources</a>
+        <a href="/contact/" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Visit us</strong>
+        <p>{{ club.meeting.frequency }} at {{ club.meeting.time }}<br>
+        {{ club.meeting.venue }} ({{ club.meeting.address }})</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p><a href="mailto:{{ club.contact.email }}">{{ club.contact.email }}</a></p>
+      </div>
+      <div>
+        <strong>Follow</strong>
+        <p>
+          {% for social in socials %}
+            <a href="{{ social.url }}">{{ social.name }}</a>{% if not loop.last %} &middot; {% endif %}
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

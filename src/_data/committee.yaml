@@ -1,0 +1,17 @@
+# Club officers — update names each time committee changes.
+- role: President
+  name: Claire Tee
+- role: VP Education
+  name: Antoine Fenix
+- role: VP Membership
+  name: Barry Hayes
+- role: VP Public Relations
+  name: Jessica Love
+- role: Secretary
+  name: Antonia Olszewski
+- role: Treasurer
+  name: Leon Lim
+- role: Sergeant at Arms
+  name: Tomas Easdale
+- role: Immediate Past President
+  name: Barry Hayes

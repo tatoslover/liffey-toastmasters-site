@@ -1,0 +1,30 @@
+# Core club info — edit these values any time, the whole site updates.
+name: Liffey Toastmasters
+founded: 1999
+tagline: Become a confident public speaker!
+history: >
+  Liffey Toastmasters was founded in 1999 and has a history of achievement both
+  on a club and individual level. Our club has been President's Distinguished
+  Status on four occasions, which is the highest rating achievable in Toastmasters.
+area: >
+  We recruit members from many parts of Selwyn District, including Rolleston,
+  Prebbleton, Springston, West Melton and Leeston, as well as Lincoln. We even
+  have members from French Farm, which is in the Akaroa Harbour basin, and so
+  is outside the district!
+
+meeting:
+  frequency: 1st and 3rd Wednesday of each month
+  time: 7:15pm
+  venue: Lincoln Events Centre
+  address: 15 Meijer Drive
+
+contact:
+  email: liffey@toastmasters.org.nz
+
+pricing:
+  - term: 3 months
+    price: "$77"
+  - term: 6 months
+    price: "$140"
+  - term: 12 months
+    price: "$270"

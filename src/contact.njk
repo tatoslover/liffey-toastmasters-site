@@ -1,0 +1,18 @@
+---
+title: Contact
+layout: base.njk
+---
+<h1>Contact</h1>
+
+<p>Send us an email at <a href="mailto:{{ club.contact.email }}">{{ club.contact.email }}</a>.</p>
+
+<h2>Visit</h2>
+<p>{{ club.meeting.frequency }} at {{ club.meeting.time }}<br>
+{{ club.meeting.venue }} ({{ club.meeting.address }})</p>
+
+<h2>Follow</h2>
+<p>
+  {% for social in socials %}
+    <a href="{{ social.url }}">{{ social.name }}</a>{% if not loop.last %} &middot; {% endif %}
+  {% endfor %}
+</p>

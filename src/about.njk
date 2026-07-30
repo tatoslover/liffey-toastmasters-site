@@ -1,0 +1,26 @@
+---
+title: About
+layout: base.njk
+---
+<h1>About {{ club.name }}</h1>
+
+<section>
+  <h2>Our club</h2>
+  <p>{{ club.history }}</p>
+</section>
+
+<section>
+  <h2>Our members</h2>
+  <p>{{ club.area }}</p>
+  <p>We currently have a membership of approximately {{ members.count }}.</p>
+</section>
+
+<section>
+  <h2>Club committee</h2>
+  <p>Our club is managed by a committee of volunteers. Below are the Club Officers for this year:</p>
+  <ul class="committee-list">
+    {% for officer in committee %}
+    <li><strong>{{ officer.role }}</strong> &ndash; {{ officer.name }}</li>
+    {% endfor %}
+  </ul>
+</section>

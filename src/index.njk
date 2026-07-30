@@ -1,0 +1,22 @@
+---
+title: Welcome
+layout: base.njk
+---
+<section class="hero">
+  <h1>{{ club.tagline }}</h1>
+  <p>{{ club.name }} has been helping people develop public speaking and
+  leadership skills since {{ club.founded }}. Visit one of our meetings and
+  see for yourself how Toastmasters helps people build confidence!</p>
+  <a class="button" href="/membership/">Come along as a guest</a>
+</section>
+
+<section>
+  <h2>Our club</h2>
+  <p>{{ club.history }}</p>
+</section>
+
+<section>
+  <h2>Where we draw members from</h2>
+  <p>{{ club.area }}</p>
+  <p>We currently have a membership of approximately {{ members.count }}.</p>
+</section>

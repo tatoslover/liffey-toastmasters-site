@@ -1,0 +1,28 @@
+---
+title: Resources
+layout: base.njk
+---
+<h1>Resources</h1>
+
+<section>
+  <h2>Meeting roles</h2>
+  <p>{{ resources.meetingRolesIntro }}</p>
+  <dl class="roles-list">
+    {% for item in resources.meetingRoles %}
+    <dt>{{ item.role }}</dt>
+    <dd>{{ item.description }}</dd>
+    {% endfor %}
+  </dl>
+</section>
+
+<section>
+  <h2>Useful links</h2>
+  <ul class="link-list">
+    {% for link in resources.links %}
+    <li>
+      <a href="{{ link.url }}">{{ link.title }}</a>
+      <p>{{ link.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
