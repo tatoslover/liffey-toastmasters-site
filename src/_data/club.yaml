@@ -1,11 +1,11 @@
-# Core club info — edit these values any time, the whole site updates.
+# Core club info. Edit these values any time, the whole site updates.
 name: Liffey Toastmasters
 founded: 1999
 tagline: Become a confident public speaker!
 description: >
   Liffey Toastmasters is a friendly public speaking and leadership club in
-  Lincoln, Christchurch, meeting every Wednesday. Visit as a guest for free
-  — no pressure to speak.
+  Lincoln, Christchurch, meeting every Wednesday. Visit as a guest for free,
+  there's no pressure to speak.
 history: >
   Liffey Toastmasters was founded in 1999 and has a history of achievement both
   on a club and individual level. Our club has been President's Distinguished
@@ -25,7 +25,7 @@ meeting:
 committeeMeeting:
   frequency: 4th Wednesday of each month
   time: "7:00pm – 9:00pm"
-  mode: Online (committee only — not a guest meeting)
+  mode: Online (committee only, not a guest meeting)
 
 contact:
   email: liffey@toastmasters.org.nz

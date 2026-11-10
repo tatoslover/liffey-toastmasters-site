@@ -1,20 +1,20 @@
-# Club officers — update names each time committee changes.
-# This year the club runs a "double committee" for some roles — `name` is
-# always a list, even for a single officer, so templates can treat every
-# role the same way (joined with " & " when there are two names).
+# Club officers for the current Toastmasters year (26/27).
+# This year every role runs as a double committee, so `name` is always a
+# list, even for the one solo role, so templates can treat every entry the
+# same way (joined with " & " when there are two names).
 - role: President
   name: [Jess, Antonia]
 - role: VP Education
-  name: [TBC]
+  name: [Antoine, Helen]
 - role: VP Membership
-  name: [TBC]
+  name: [Barry, Lucy]
 - role: VP Public Relations
   name: [Sam, Fred]
-- role: Secretary
-  name: [TBC]
 - role: Treasurer
-  name: [TBC]
+  name: [Leon, Gloria]
+- role: Secretary
+  name: [Tomas, Lisa]
 - role: Sergeant at Arms
-  name: [TBC]
+  name: [Kate, Phyo]
 - role: Immediate Past President
-  name: [TBC]
+  name: [Claire]

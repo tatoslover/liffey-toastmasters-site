@@ -1,13 +1,10 @@
-# Resources & links section — add/remove entries freely, the page rebuilds the list.
+# Resources & links section. Add or remove entries freely, the page rebuilds the list.
 
 meetingRolesIntro: >
   A Toastmasters meeting is comprised of many different speaking roles. No two
   roles are the same and each is designed to help you improve in a specific
   area of communication. Below is a brief summary of what's involved:
 
-# NOTE: the live site's Meeting Roles page is actually broken (intro text
-# loads, then the role list itself is missing). These are the standard
-# Toastmasters meeting roles — swap in the club's own descriptions if you have them.
 meetingRoles:
   - role: Toastmaster of the Day
     description: Hosts and runs the meeting from start to finish, introducing each segment and speaker.
@@ -32,4 +29,4 @@ links:
     description: The official Toastmasters education program members work through to build speaking and leadership skills.
   - title: Toastmasters International
     url: https://www.toastmasters.org
-    description: The parent organisation's website — find other clubs, resources and events.
+    description: The parent organisation's website, where you can find other clubs, resources and events.

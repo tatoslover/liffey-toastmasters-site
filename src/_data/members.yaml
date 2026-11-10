@@ -1,5 +1,5 @@
 # Members section.
-# `count` is the headline number shown on the site — update it whenever
+# `count` is the headline number shown on the site. Update it whenever
 # membership changes, no need to list everyone.
 # `profiles` is opt-in only: add an entry here ONLY once a member has agreed
 # to have a public profile on the site. Leave the list empty otherwise.

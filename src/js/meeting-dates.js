@@ -1,13 +1,14 @@
 /* Renders the club's real meeting schedule (from the committee's planning
-   sheet) as a scrollable list on the Membership page — past meetings and
+   sheet) as a scrollable list on the Membership page, past meetings and
    upcoming ones together, auto-scrolled so "today" sits at the top. This
    mirrors the Samdee calendar pattern used on the homepage project.
 
    The schedule itself is static/known in advance (it's a real roster, not
-   an algorithmic "every Wednesday" pattern — committee meetings land on
-   the 4th Wednesday most months, but there are exceptions), so dates are
-   hardcoded here rather than computed. Update MEETINGS when the committee
-   publishes the next block of dates. */
+   an algorithmic "every Wednesday" pattern, since committee meetings land
+   on the 4th Wednesday most months but there are exceptions), so dates
+   are hardcoded here rather than computed. Update MEETINGS when the
+   committee publishes the next block of dates. Undated/TBC meetings are
+   left out of this list until a date is confirmed, see TBC-NOTES.md. */
 (function () {
   var NZ_TIMEZONE = "Pacific/Auckland";
 
@@ -36,7 +37,6 @@
     { date: "2026-11-11", type: "regular" },
     { date: "2026-11-18", type: "regular" },
     { date: "2026-11-25", type: "regular", note: "Contest" },
-    { date: null, type: "committee" },
     { date: "2026-12-02", type: "regular" },
     { date: "2026-12-09", type: "regular", note: "Outdoor meeting @ Liffey Stream, 7:30–8:30pm" },
   ];
