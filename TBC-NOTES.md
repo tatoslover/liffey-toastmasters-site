@@ -22,11 +22,18 @@ dates past that.
 ## Draft content worth a sanity check
 Not "unknown," but worth a once-over since I (Claude) drafted the wording
 without direct committee input:
-- FAQ section on the Membership page
+- FAQ section on the Home page
 - "Typical meeting at a glance" sample agenda on the Resources page,
   based on the role ordering in the committee's planning sheet
 - New wording about guests joining in on Table Topics or a short
   introduction, and the mentoring system for new members
+- Meeting Roles descriptions on the Resources page (Toastmaster of the
+  Day, Prepared Speaker, Table Topics Master, Speech Evaluator, General
+  Evaluator, Timekeeper, Grammarian). These were pre-existing generic
+  Toastmasters descriptions from before this redesign, carried over as-is
+  except Ah-Counter, which was removed since the club confirmed it's not
+  a role they use. The remaining seven haven't been individually checked
+  against how this club actually runs its roles, worth a read-through.
 
 ## Resolved
 - Committee roster (`src/_data/committee.yaml`) is now filled in from the
