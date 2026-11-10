@@ -12,16 +12,14 @@ meetingRoles:
     description: Delivers a prepared speech from the Pathways education program.
   - role: Table Topics Master
     description: Runs the impromptu speaking segment, posing questions for members to answer on the spot.
-  - role: Evaluator
+  - role: Speech Evaluator
     description: Gives constructive feedback on a prepared speaker's speech.
   - role: General Evaluator
     description: Evaluates the meeting as a whole, including all other roles.
-  - role: Timer
+  - role: Timekeeper
     description: Tracks and signals speaking times for every segment of the meeting.
   - role: Grammarian
     description: Tracks language use during the meeting and highlights good (and awkward) word choices.
-  - role: Ah-Counter
-    description: Counts filler words and sounds ("um", "ah", "like") used during the meeting.
 
 links:
   - title: Toastmasters Pathways
