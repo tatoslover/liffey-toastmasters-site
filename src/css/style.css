@@ -161,14 +161,82 @@ h1, h2, h3 {
   margin: 1rem 0;
 }
 
-.meeting-dates-list li {
-  padding: 0.4rem 0;
-  border-bottom: 1px solid #eee;
+.meeting-dates-scroll {
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
 }
 
-.meeting-dates-list .meeting-note {
+@keyframes meetingItemIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.meeting-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+  animation: meetingItemIn 0.2s ease both;
+}
+
+.meeting-item:last-child {
+  border-bottom: none;
+}
+
+.meeting-item.is-past {
+  opacity: 0.45;
+}
+
+.meeting-item.is-next,
+.meeting-item.is-today {
+  background: var(--gold-light);
+  border-radius: 6px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.meeting-item.is-tbc {
+  opacity: 0.6;
+  border-style: dashed;
+}
+
+.meeting-item.meeting-cancelled .meeting-label {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.meeting-icon {
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.meeting-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.meeting-label {
+  font-weight: 600;
+}
+
+.meeting-date {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.meeting-note {
   color: var(--maroon);
   font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.meeting-dates-compact .meeting-item {
+  border-bottom: none;
 }
 
 .pricing-table {
@@ -261,5 +329,15 @@ h1, h2, h3 {
   .committee-list li,
   .meeting-dates-list li {
     border-bottom-color: #333;
+  }
+  .meeting-dates-scroll {
+    border-color: #333;
+  }
+  .meeting-date {
+    color: #aaa;
+  }
+  .meeting-item.is-next,
+  .meeting-item.is-today {
+    background: #2a2210;
   }
 }

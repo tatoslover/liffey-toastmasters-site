@@ -20,10 +20,12 @@ layout: base.njk
 
 <section>
   <h2>Club committee</h2>
-  <p>Our club is managed by a committee of volunteers. Below are the Club Officers for this year:</p>
+  <p>Our club is managed by a committee of volunteers. This year some roles
+  are shared between two co-officers (a "double committee"). Below are the
+  Club Officers for this year:</p>
   <ul class="committee-list">
     {% for officer in committee %}
-    <li><strong>{{ officer.role }}</strong> &ndash; {{ officer.name }}</li>
+    <li><strong>{{ officer.role }}</strong> &ndash; {{ officer.name | join(' & ') }}</li>
     {% endfor %}
   </ul>
 </section>

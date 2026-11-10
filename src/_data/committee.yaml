@@ -1,17 +1,20 @@
 # Club officers — update names each time committee changes.
+# This year the club runs a "double committee" for some roles — `name` is
+# always a list, even for a single officer, so templates can treat every
+# role the same way (joined with " & " when there are two names).
 - role: President
-  name: Claire Tee
+  name: [Jess, Antonia]
 - role: VP Education
-  name: Antoine Fenix
+  name: [TBC]
 - role: VP Membership
-  name: Barry Hayes
+  name: [TBC]
 - role: VP Public Relations
-  name: Jessica Love
+  name: [Sam, Fred]
 - role: Secretary
-  name: Antonia Olszewski
+  name: [TBC]
 - role: Treasurer
-  name: Leon Lim
+  name: [TBC]
 - role: Sergeant at Arms
-  name: Tomas Easdale
+  name: [TBC]
 - role: Immediate Past President
-  name: Barry Hayes
+  name: [TBC]

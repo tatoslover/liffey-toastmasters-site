@@ -11,12 +11,21 @@ layout: base.njk
 </section>
 
 <section>
-  <h2>Our club</h2>
-  <p>{{ club.history }}</p>
+  <h2>Next meeting</h2>
+  <ul id="upcoming-meetings"
+      class="meeting-dates-list meeting-dates-compact"
+      data-meeting-time="{{ club.meeting.time }}"
+      data-committee-time="{{ club.committeeMeeting.time }}"
+      data-limit="1">
+    <li>Loading&hellip;</li>
+  </ul>
+  <p><a href="/membership/">See all upcoming (and past) meeting dates &rarr;</a></p>
 </section>
 
 <section>
-  <h2>Where we draw members from</h2>
-  <p>{{ club.area }}</p>
-  <p>We currently have a membership of approximately {{ members.count }}.</p>
+  <h2>Want the full story?</h2>
+  <p>Read more <a href="/about/">about our club</a> &mdash; our history,
+  where our members come from, and who's on the committee this year.</p>
 </section>
+
+<script src="/js/meeting-dates.js" defer></script>

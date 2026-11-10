@@ -13,13 +13,13 @@ area: >
   is outside the district!
 
 meeting:
-  frequency: Every Wednesday (except the 3rd Wednesday of the month)
+  frequency: Every Wednesday (except the 4th Wednesday of the month)
   time: "7:30pm – 9:00pm"
   venue: Lincoln Events Centre
   address: 15 Meijer Drive
 
 committeeMeeting:
-  frequency: 3rd Wednesday of each month
+  frequency: 4th Wednesday of each month
   time: "7:00pm – 9:00pm"
   mode: Online (committee only — not a guest meeting)
 
