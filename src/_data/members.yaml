@@ -1,15 +1,4 @@
-# Members section.
-# `count` is the headline number shown on the site. Update it whenever
-# membership changes, no need to list everyone.
-# `profiles` is opt-in only: add an entry here ONLY once a member has agreed
-# to have a public profile on the site. Leave the list empty otherwise.
-count: 26
-
-profiles: []
-# Example of how to add a profile once someone opts in:
-# profiles:
-#   - name: Jane Smith
-#     role: Member since 2023
-#     bio: >
-#       Jane joined Liffey Toastmasters to build confidence presenting at work
-#       and has since completed three Pathways levels.
+# Membership headline count, shown on the About page.
+# Update this whenever membership changes. Sourced from the committee's
+# membership tracking sheet (active members only, excludes anyone on hold).
+count: 28

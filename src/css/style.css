@@ -5,7 +5,6 @@
   --gold-light: #F5D49A;
   --text: #222;
   --bg: #ffffff;
-  --card-bg: #f7f7f5;
   --max-width: 900px;
 }
 
@@ -133,7 +132,7 @@ h1, h2, h3 {
 
 .club-flag {
   flex: 0 0 auto;
-  max-height: 260px;
+  max-height: 440px;
   width: auto;
   margin: 0 auto;
   display: block;
@@ -279,24 +278,6 @@ h1, h2, h3 {
   text-align: left;
 }
 
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-.member-card {
-  background: var(--card-bg);
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-.member-role {
-  font-weight: 600;
-  color: var(--maroon);
-  margin-top: -0.5rem;
-}
-
 .roles-list dt {
   font-weight: 700;
   margin-top: 1rem;
@@ -355,9 +336,6 @@ h1, h2, h3 {
   body {
     background: #121212;
     color: #eee;
-  }
-  .card-bg, .member-card {
-    background: #1e1e1e;
   }
   .pricing-table th, .pricing-table td {
     border-color: #333;

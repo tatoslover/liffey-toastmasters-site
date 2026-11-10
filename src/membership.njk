@@ -4,40 +4,9 @@ layout: base.njk
 ---
 <h1>Membership</h1>
 
-<section>
-  <h2>Visit</h2>
-  <p>It is 100% free to visit as a guest and there is no pressure to speak
-  at your first meeting. Simply come along and enjoy the speeches. If you'd
-  rather join in, most guests are welcome to answer a Table Topics question
-  or give a short introduction of themselves, but it's entirely up to you.
-  We meet {{ club.meeting.frequency }}, {{ club.meeting.time }}, in the
-  {{ club.meeting.venue }} ({{ club.meeting.address }}).</p>
-  <p>Note: on the 4th Wednesday of the month we hold an online committee
-  meeting ({{ club.committeeMeeting.time }}) rather than a regular guest
-  meeting, see the schedule below.</p>
-  <p>We're a welcoming bunch, and new members are paired with an experienced
-  member as a mentor, so you'll always have someone to turn to with
-  questions while you settle in.</p>
-
-  <iframe
-    class="map-embed"
-    src="https://www.google.com/maps?q=Lincoln+Events+Centre,+15+Meijer+Drive,+Lincoln&output=embed"
-    width="100%" height="300" style="border:0"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    title="Map to {{ club.meeting.venue }}">
-  </iframe>
-
-  <h3>Meeting schedule</h3>
-  <p>Scroll for the full published schedule, including meetings already
-  held this year.</p>
-  <ul id="upcoming-meetings"
-      class="meeting-dates-list meeting-dates-scroll"
-      data-meeting-time="{{ club.meeting.time }}"
-      data-committee-time="{{ club.committeeMeeting.time }}">
-    <li>Loading schedule&hellip;</li>
-  </ul>
-</section>
+<p>Looking for when and where we meet, directions, or common questions
+about visiting? See the <a href="/">Home page</a> for the full schedule,
+map, and FAQ. This page covers joining as a member.</p>
 
 <section>
   <h2>Sign up</h2>
@@ -56,44 +25,9 @@ layout: base.njk
 </section>
 
 <section>
-  <h2>Frequently asked questions</h2>
-  <div class="faq-list">
-    <details>
-      <summary>Do I have to speak at my first meeting?</summary>
-      <p>No, speaking is entirely optional. Plenty of guests like to answer
-      a Table Topics question or give a short introduction of themselves,
-      but you're just as welcome to sit back and watch.</p>
-    </details>
-    <details>
-      <summary>What should I wear?</summary>
-      <p>Smart casual is fine, there's no dress code. Come as you are.</p>
-    </details>
-    <details>
-      <summary>What actually happens at a meeting?</summary>
-      <p>A mix of prepared speeches, impromptu "Table Topics" speaking, and
-      constructive evaluations, run through a set of rotating member roles.
-      See the <a href="/resources/">Resources page</a> for a full
-      breakdown of each role.</p>
-    </details>
-    <details>
-      <summary>Is it normal to be nervous about public speaking?</summary>
-      <p>Completely. It's the single biggest reason people join Toastmasters
-      in the first place, and everyone in the room has been exactly
-      where you are.</p>
-    </details>
-    <details>
-      <summary>Can I bring a friend?</summary>
-      <p>Of course, guests are always welcome, on your first visit or any time.</p>
-    </details>
-  </div>
-</section>
-
-<section>
   <h2>Speak!</h2>
   <p>Now it's time to practice speaking! New members are usually assigned minor
   meeting roles to help you gradually build up your confidence. Once you're
   ready, your first speech will be your Ice Breaker, a chance to
   introduce yourself and become more comfortable speaking in front of an audience.</p>
 </section>
-
-<script src="/js/meeting-dates.js" defer></script>

@@ -27,6 +27,24 @@ links:
   - title: Toastmasters Pathways
     url: https://www.toastmasters.org/pathways-overview
     description: The official Toastmasters education program members work through to build speaking and leadership skills.
+  - title: Base Camp
+    url: https://www.toastmasters.org/start-pathways
+    description: Sign in to work through your Pathways path online once you're a member.
   - title: Toastmasters International
     url: https://www.toastmasters.org
-    description: The parent organisation's website, where you can find other clubs, resources and events.
+    description: The parent organisation's website, with news, articles and official resources.
+  - title: Toastmasters Magazine
+    url: https://www.toastmasters.org/magazine
+    description: Articles and tips on public speaking and leadership from Toastmasters International.
+  - title: Find a Club
+    url: https://www.toastmasters.org/Find-a-Club
+    description: Search for other Toastmasters clubs, handy if you're travelling or want to visit as a guest elsewhere.
+  - title: Our club's official listing
+    url: https://www.toastmasters.org/Find-a-Club/00007615-00007615
+    description: Liffey Toastmasters' listing on the official Toastmasters International club directory.
+  - title: Toastmasters New Zealand
+    url: https://www.toastmasters.org.nz
+    description: News and resources for Toastmasters clubs across New Zealand.
+  - title: District 72
+    url: https://www.toastmasters.org.nz/d72/
+    description: Our district, covering New Zealand and Fiji. Member login required for most content.
