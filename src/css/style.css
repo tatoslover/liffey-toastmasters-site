@@ -239,6 +239,35 @@ h1, h2, h3 {
   border-bottom: none;
 }
 
+.map-embed {
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: block;
+}
+
+.faq-list details {
+  border-bottom: 1px solid #eee;
+  padding: 0.6rem 0;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--maroon-dark);
+}
+
+.faq-list details p {
+  margin: 0.5rem 0 0;
+}
+
+.agenda-list {
+  padding-left: 1.25rem;
+}
+
+.agenda-list li {
+  padding: 0.2rem 0;
+}
+
 .pricing-table {
   border-collapse: collapse;
   margin-top: 1rem;
@@ -349,5 +378,11 @@ h1, h2, h3 {
   .meeting-item.is-next,
   .meeting-item.is-today {
     background: #2a2210;
+  }
+  .faq-list details {
+    border-bottom-color: #333;
+  }
+  .faq-list summary {
+    color: var(--gold-light);
   }
 }

@@ -12,6 +12,11 @@ layout: base.njk
   <img class="club-flag" src="/assets/images/liffey-flag.svg" alt="Liffey Toastmasters club flag, a maroon and gold feather-shaped banner">
 </section>
 
+{% for social in socials %}{% if social.name == "Facebook" %}
+<p>&#128247; Want to see us in action? Check out photos from our meetings on
+our <a href="{{ social.url }}">Facebook page</a>.</p>
+{% endif %}{% endfor %}
+
 <section>
   <h2>Our members</h2>
   <p>{{ club.area }}</p>

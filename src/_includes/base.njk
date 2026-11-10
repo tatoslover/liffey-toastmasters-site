@@ -4,6 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} - {{ club.name }}</title>
+  <meta name="description" content="{{ club.description }}">
+
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+
+  <meta property="og:site_name" content="{{ club.name }}">
+  <meta property="og:title" content="{{ title }} - {{ club.name }}">
+  <meta property="og:description" content="{{ club.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://liffeytoastmasters.co.nz{{ page.url }}">
+  <meta property="og:image" content="https://liffeytoastmasters.co.nz/assets/favicon/og-image.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title }} - {{ club.name }}">
+  <meta name="twitter:description" content="{{ club.description }}">
+  <meta name="twitter:image" content="https://liffeytoastmasters.co.nz/assets/favicon/og-image.png">
+
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
