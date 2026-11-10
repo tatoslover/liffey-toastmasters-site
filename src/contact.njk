@@ -7,8 +7,10 @@ layout: base.njk
 <p>Send us an email at <a href="mailto:{{ club.contact.email }}">{{ club.contact.email }}</a>.</p>
 
 <h2>Visit</h2>
-<p>{{ club.meeting.frequency }} at {{ club.meeting.time }}<br>
+<p>{{ club.meeting.frequency }}, {{ club.meeting.time }}<br>
 {{ club.meeting.venue }} ({{ club.meeting.address }})</p>
+<p>Note: on the 3rd Wednesday of the month we hold an online committee meeting
+({{ club.committeeMeeting.time }}) instead of a regular guest meeting.</p>
 
 <h2>Follow</h2>
 <p>

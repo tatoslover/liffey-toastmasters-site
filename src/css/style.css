@@ -1,8 +1,8 @@
 :root {
-  --navy: #16456b;
-  --navy-dark: #0f2f4a;
-  --gold: #eddc7c;
-  --gold-light: #f7f2d8;
+  --maroon: #772432;
+  --maroon-dark: #3B0104;
+  --gold: #C8922A;
+  --gold-light: #F5D49A;
   --text: #222;
   --bg: #ffffff;
   --card-bg: #f7f7f5;
@@ -39,10 +39,31 @@ body {
   gap: 1rem;
 }
 
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+  line-height: 0;
+}
+
+.brand-logo img {
+  height: 40px;
+  display: block;
+}
+
 .brand {
   font-weight: 700;
   font-size: 1.25rem;
-  color: var(--navy-dark);
+  color: var(--maroon-dark);
   text-decoration: none;
 }
 
@@ -53,7 +74,7 @@ body {
 }
 
 .nav a {
-  color: var(--navy-dark);
+  color: var(--maroon-dark);
   text-decoration: none;
   font-weight: 600;
 }
@@ -77,12 +98,12 @@ body {
 
 .hero h1 {
   margin-top: 0;
-  color: var(--navy-dark);
+  color: var(--maroon-dark);
 }
 
 .button {
   display: inline-block;
-  background: var(--navy);
+  background: var(--maroon);
   color: #fff;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
@@ -92,11 +113,36 @@ body {
 }
 
 .button:hover {
-  background: var(--navy-dark);
+  background: var(--maroon-dark);
 }
 
 h1, h2, h3 {
-  color: var(--navy-dark);
+  color: var(--maroon-dark);
+}
+
+.club-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.club-section .club-text {
+  flex: 1 1 320px;
+}
+
+.club-flag {
+  flex: 0 0 auto;
+  max-height: 260px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .club-flag {
+    order: 2;
+  }
 }
 
 .committee-list {
@@ -107,6 +153,22 @@ h1, h2, h3 {
 .committee-list li {
   padding: 0.4rem 0;
   border-bottom: 1px solid #eee;
+}
+
+.meeting-dates-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.meeting-dates-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.meeting-dates-list .meeting-note {
+  color: var(--maroon);
+  font-weight: 600;
 }
 
 .pricing-table {
@@ -134,7 +196,7 @@ h1, h2, h3 {
 
 .member-role {
   font-weight: 600;
-  color: var(--navy);
+  color: var(--maroon);
   margin-top: -0.5rem;
 }
 
@@ -158,11 +220,11 @@ h1, h2, h3 {
 
 .link-list a {
   font-weight: 600;
-  color: var(--navy);
+  color: var(--maroon);
 }
 
 .site-footer {
-  background: var(--navy-dark);
+  background: var(--maroon-dark);
   color: #fff;
   margin-top: 3rem;
 }
@@ -194,9 +256,10 @@ h1, h2, h3 {
     border-color: #333;
   }
   h1, h2, h3 {
-    color: #cfe0f0;
+    color: var(--gold-light);
   }
-  .committee-list li {
+  .committee-list li,
+  .meeting-dates-list li {
     border-bottom-color: #333;
   }
 }

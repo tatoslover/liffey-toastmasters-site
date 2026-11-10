@@ -8,15 +8,25 @@ layout: base.njk
   <h2>Visit</h2>
   <p>It is 100% free to visit as a guest and there will be no pressure to speak
   during the first meeting. Simply come along and enjoy the speeches! We meet
-  on the {{ club.meeting.frequency }} at {{ club.meeting.time }} in the
+  {{ club.meeting.frequency }}, {{ club.meeting.time }}, in the
   {{ club.meeting.venue }} ({{ club.meeting.address }}).</p>
+  <p>Note: on the 3rd Wednesday of the month we hold an online committee
+  meeting ({{ club.committeeMeeting.time }}) rather than a regular guest
+  meeting &mdash; see the upcoming dates below.</p>
+
+  <h3>Upcoming meeting dates</h3>
+  <ul id="upcoming-meetings"
+      class="meeting-dates-list"
+      data-meeting-time="{{ club.meeting.time }}"
+      data-committee-time="{{ club.committeeMeeting.time }}">
+    <li>Loading upcoming dates&hellip;</li>
+  </ul>
 </section>
 
 <section>
   <h2>Sign up</h2>
-  <p>If you like what you see and want to get involved, simply speak to one of
-  the Club Officers during the meeting. They will be able to give you an
-  application form and provide payment information.</p>
+  <p>New members pay a one-off fee of <strong>{{ club.newMemberFee }}</strong>,
+  then club dues at one of the terms below.</p>
   <table class="pricing-table">
     <thead><tr><th>Term</th><th>Price</th></tr></thead>
     <tbody>
@@ -25,6 +35,8 @@ layout: base.njk
       {% endfor %}
     </tbody>
   </table>
+  <p>{{ club.paymentContact }}</p>
+  <p><a class="button" href="/assets/documents/liffey-membership-application-2026.pdf">Download the Membership Application form (PDF)</a></p>
 </section>
 
 <section>
@@ -34,3 +46,5 @@ layout: base.njk
   ready, your first speech will be your Ice Breaker &mdash; an opportunity to
   introduce yourself and become more comfortable speaking in front of an audience.</p>
 </section>
+
+<script src="/js/meeting-dates.js" defer></script>

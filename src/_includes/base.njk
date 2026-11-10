@@ -9,7 +9,12 @@
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="/">{{ club.name }}</a>
+      <div class="brand-group">
+        <span class="brand-logo">
+          <img src="/assets/images/toastmasters-logo.svg" alt="Toastmasters International logo">
+        </span>
+        <a class="brand" href="/">{{ club.name }}</a>
+      </div>
       <nav class="nav">
         <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
         <a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>About</a>
@@ -29,7 +34,7 @@
     <div class="wrap footer-inner">
       <div>
         <strong>Visit us</strong>
-        <p>{{ club.meeting.frequency }} at {{ club.meeting.time }}<br>
+        <p>{{ club.meeting.frequency }}, {{ club.meeting.time }}<br>
         {{ club.meeting.venue }} ({{ club.meeting.address }})</p>
       </div>
       <div>

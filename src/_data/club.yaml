@@ -13,18 +13,27 @@ area: >
   is outside the district!
 
 meeting:
-  frequency: 1st and 3rd Wednesday of each month
-  time: 7:15pm
+  frequency: Every Wednesday (except the 3rd Wednesday of the month)
+  time: "7:30pm – 9:00pm"
   venue: Lincoln Events Centre
   address: 15 Meijer Drive
+
+committeeMeeting:
+  frequency: 3rd Wednesday of each month
+  time: "7:00pm – 9:00pm"
+  mode: Online (committee only — not a guest meeting)
 
 contact:
   email: liffey@toastmasters.org.nz
 
+newMemberFee: "$50 (one-off, new members only)"
+
 pricing:
   - term: 3 months
-    price: "$77"
+    price: "$105"
   - term: 6 months
-    price: "$140"
+    price: "$170"
   - term: 12 months
-    price: "$270"
+    price: "$310"
+
+paymentContact: "Contact our club treasurer, Gloria (Gloria.Hao@lincoln.ac.nz), to arrange payment."

@@ -4,9 +4,12 @@ layout: base.njk
 ---
 <h1>About {{ club.name }}</h1>
 
-<section>
-  <h2>Our club</h2>
-  <p>{{ club.history }}</p>
+<section class="club-section">
+  <div class="club-text">
+    <h2>Our club</h2>
+    <p>{{ club.history }}</p>
+  </div>
+  <img class="club-flag" src="/assets/images/liffey-flag.svg" alt="Liffey Toastmasters club flag, a maroon and gold feather-shaped banner">
 </section>
 
 <section>
