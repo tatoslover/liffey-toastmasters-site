@@ -4,12 +4,11 @@ layout: base.njk
 ---
 <h1>About {{ club.name }}</h1>
 
-<section class="club-section">
-  <div class="club-text">
-    <h2>Our club</h2>
-    <p>{{ club.history }}</p>
-  </div>
-  <img class="club-flag" src="/assets/images/liffey-flag.svg" alt="Liffey Toastmasters club flag, a maroon and gold feather-shaped banner">
+<img class="club-flag" src="/assets/images/liffey-flag.svg" alt="Liffey Toastmasters club flag, a maroon and gold feather-shaped banner">
+
+<section>
+  <h2>Our club</h2>
+  <p>{{ club.history }}</p>
 </section>
 
 {% for social in socials %}{% if social.name == "Facebook" %}
@@ -25,9 +24,8 @@ our <a href="{{ social.url }}">Facebook page</a>.</p>
 
 <section>
   <h2>Club committee</h2>
-  <p>Our club is managed by a committee of volunteers. This year most roles
-  are shared between two co-officers (a "double committee"). Below are the
-  Club Officers for this year:</p>
+  <p>Our club is managed by a committee of volunteers. Below are the Club
+  Officers for this year:</p>
   <ul class="committee-list">
     {% for officer in committee %}
     <li><strong>{{ officer.role }}</strong> &ndash; {{ officer.name | join(' & ') }}</li>

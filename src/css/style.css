@@ -85,6 +85,7 @@ body {
 
 .page {
   padding: 2.5rem 1.5rem 3rem;
+  display: flow-root; /* contains floated content, e.g. the About page flag */
 }
 
 .hero {
@@ -119,28 +120,17 @@ h1, h2, h3 {
   color: var(--maroon-dark);
 }
 
-.club-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-
-.club-section .club-text {
-  flex: 1 1 320px;
-}
-
 .club-flag {
-  flex: 0 0 auto;
   max-height: 440px;
   width: auto;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto 1.5rem;
 }
 
 @media (min-width: 640px) {
   .club-flag {
-    order: 2;
+    float: right;
+    margin: 0 0 1rem 1.5rem;
   }
 }
 
