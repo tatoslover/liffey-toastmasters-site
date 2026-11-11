@@ -13,32 +13,35 @@
   var NZ_TIMEZONE = "Pacific/Auckland";
 
   // One row per meeting. type: "regular" | "committee" | "cancelled".
+  // number: the club's official sequential meeting number (from the
+  // planning sheet). Committee meetings and the cancelled meeting aren't
+  // given one there, so they're left unnumbered here too.
   // note: optional short extra detail (contest, special format, etc).
   var MEETINGS = [
     { date: "2026-07-01", type: "committee" },
-    { date: "2026-07-08", type: "regular" },
-    { date: "2026-07-15", type: "regular" },
+    { date: "2026-07-08", type: "regular", number: 1157 },
+    { date: "2026-07-15", type: "regular", number: 1158 },
     { date: "2026-07-22", type: "committee" },
-    { date: "2026-07-29", type: "regular" },
-    { date: "2026-08-05", type: "regular" },
-    { date: "2026-08-12", type: "regular", note: "3-minute thesis meeting" },
+    { date: "2026-07-29", type: "regular", number: 1159 },
+    { date: "2026-08-05", type: "regular", number: 1160 },
+    { date: "2026-08-12", type: "regular", number: 1161, note: "3-minute thesis meeting" },
     { date: "2026-08-19", type: "cancelled" },
     { date: "2026-08-26", type: "committee" },
-    { date: "2026-09-02", type: "regular" },
-    { date: "2026-09-09", type: "regular" },
-    { date: "2026-09-16", type: "regular" },
+    { date: "2026-09-02", type: "regular", number: 1162 },
+    { date: "2026-09-09", type: "regular", number: 1163 },
+    { date: "2026-09-16", type: "regular", number: 1164 },
     { date: "2026-09-23", type: "committee" },
-    { date: "2026-09-30", type: "regular" },
-    { date: "2026-10-07", type: "regular" },
-    { date: "2026-10-14", type: "regular" },
-    { date: "2026-10-21", type: "regular", note: "Contest" },
+    { date: "2026-09-30", type: "regular", number: 1165 },
+    { date: "2026-10-07", type: "regular", number: 1166 },
+    { date: "2026-10-14", type: "regular", number: 1167 },
+    { date: "2026-10-21", type: "regular", number: 1168, note: "Contest" },
     { date: "2026-10-28", type: "committee" },
-    { date: "2026-11-04", type: "regular" },
-    { date: "2026-11-11", type: "regular" },
-    { date: "2026-11-18", type: "regular" },
-    { date: "2026-11-25", type: "regular", note: "Contest" },
-    { date: "2026-12-02", type: "regular" },
-    { date: "2026-12-09", type: "regular", note: "Outdoor meeting @ Liffey Stream, 7:30–8:30pm" },
+    { date: "2026-11-04", type: "regular", number: 1169 },
+    { date: "2026-11-11", type: "regular", number: 1170 },
+    { date: "2026-11-18", type: "regular", number: 1171 },
+    { date: "2026-11-25", type: "regular", number: 1172, note: "Contest" },
+    { date: "2026-12-02", type: "regular", number: 1173 },
+    { date: "2026-12-09", type: "regular", number: 1174, note: "Outdoor meeting @ Liffey Stream, 7:30–8:30pm" },
   ];
 
   var TYPE_META = {
@@ -151,6 +154,7 @@
         '<span class="meeting-icon" aria-hidden="true">' + meta.icon + "</span>" +
         '<span class="meeting-body">' +
         '<span class="meeting-label">' + meta.label +
+        (m.number ? " #" + m.number : "") +
         (timeText && m.type !== "cancelled" ? ", " + timeText : "") +
         "</span>" +
         '<span class="meeting-date">' + dateText + "</span>" +
